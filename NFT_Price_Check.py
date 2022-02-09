@@ -28,8 +28,8 @@ async def nft_buys(message):
         nft_floor += str('{} | {} ETH \n'.format(nft_list[i].call_date, nft_list[i].floor))
         nft_price += str('{} ETH \n'.format(nft_list[i].price))
 
-    embed_nft = discord.Embed(title="NFT Buys", url='', description="<#912536067071172618>", color=0x63b3f7)
-    embed_nft.set_thumbnail(url='https://theme.zdassets.com/theme_assets/10680073/ea23e80a00a21a2499db8b5bb95cd31be1d9efa1.png')
+    embed_nft = discord.Embed(title="NFT Buys", url='https://opensea.io/', description="<#912536067071172618>", color=0x63b3f7)
+    embed_nft.set_thumbnail(url='https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.png')
     embed_nft.add_field(name='__NFT Collection__', value=nft_message, inline=True)
     embed_nft.add_field(name='__Call Date | Call Price__', value=nft_floor, inline=True)
     embed_nft.add_field(name='__Current Floor__', value=nft_price, inline=True)
