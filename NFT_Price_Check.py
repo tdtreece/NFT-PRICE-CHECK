@@ -35,3 +35,5 @@ async def nft_buys(message):
     embed_nft.add_field(name='__Current Floor__', value=nft_price, inline=True)
 
     await message.channel.send(embed=embed_nft)
+
+bot.run('token')
